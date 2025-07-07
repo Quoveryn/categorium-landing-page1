@@ -1,2 +1,2 @@
-# categorium-landing-page1
-categorium-landing-page1
+# categorium-landing-page
+categorium-landing-page
