@@ -105,18 +105,58 @@ const CoverVideo = () => {
           <motion.h1
             variants={item}
             data-scroll
-            data-scroll-delay="0.13"
+            data-scroll-delay="0.20"
             data-scroll-speed="4"
           >
-            W
+            C
           </motion.h1>
           <motion.h1
             variants={item}
             data-scroll
-            data-scroll-delay="0.09"
+            data-scroll-delay="0.18"
             data-scroll-speed="4"
           >
-            i
+            a
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.16"
+            data-scroll-speed="4"
+          >
+            t
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.12"
+            data-scroll-speed="4"
+          >
+            e
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.12"
+            data-scroll-speed="4"
+          >
+            g
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.10"
+            data-scroll-speed="4"
+          >
+            o
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.08"
+            data-scroll-speed="4"
+          >
+            r
           </motion.h1>
           <motion.h1
             variants={item}
@@ -124,7 +164,7 @@ const CoverVideo = () => {
             data-scroll-delay="0.06"
             data-scroll-speed="4"
           >
-            b
+            i
           </motion.h1>
           <motion.h1
             variants={item}
@@ -132,7 +172,15 @@ const CoverVideo = () => {
             data-scroll-delay="0.04"
             data-scroll-speed="4"
           >
-            e
+            u
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.02"
+            data-scroll-speed="4"
+          >
+            m
           </motion.h1>
         </div>
         <motion.h2
