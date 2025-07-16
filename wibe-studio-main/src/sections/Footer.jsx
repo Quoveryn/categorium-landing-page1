@@ -3,7 +3,7 @@ import React from "react";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
 
-import Logo from "../assets/Svgs/star_white_48dp.svg";
+import Logo from "../assets/Images/logo_categorium.png";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -16,8 +16,7 @@ const Section = styled.section`
   align-items: center;
   overflow-x: hidden;
 
-
-  background-color: ${(props) => props.theme.body};
+  background-color: #024D65;
   color: ${(props) => props.theme.text};
 
   position: relative;
@@ -30,7 +29,7 @@ const LogoContainer = styled.div`
   align-items: center;
 
   img {
-    width: 10vw;
+    width: 15vw;
     height: auto;
   }
 
@@ -135,7 +134,7 @@ const Footer = () => {
           data-scroll-speed="2"
         />
         <h3 data-scroll data-scroll-speed="-1">
-          Wibe Studio
+          Categorium
         </h3>
       </LogoContainer>
       <FooterComponent

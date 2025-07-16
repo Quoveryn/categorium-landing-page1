@@ -35,7 +35,7 @@ const Container = styled.div`
 const Banner = styled.h1`
   font-size: ${(props) => props.theme.fontxxxl};
   font-family: 'Kaushan Script';
-  color: ${(props) => props.theme.text};
+  color: white;
   /* position: absolute; */
   white-space: nowrap;
   text-transform: uppercase;
@@ -77,7 +77,7 @@ const Marquee = () => {
             data-scroll-speed="8"
             data-scroll-target="#direction"
           >
-            Fashon is an armour
+            LA VIDA ME DIO DOS PIERNAS
           </span>
         </Banner>
         <Banner data-scroll data-scroll-speed="-2" data-scroll-target="#direction">
@@ -87,7 +87,7 @@ const Marquee = () => {
             data-scroll-speed="-6"
             data-scroll-target="#direction"
           >
-            To survive everyday life
+           PARA JUGAR AL FUTBOL
           </span>
         </Banner>
         <Banner>
@@ -97,7 +97,7 @@ const Marquee = () => {
             data-scroll-speed="6"
             data-scroll-target="#direction"
           >
-            One is never over-dressed or
+            NO PARA ESTAR DETRAS DE UNA CHICA
           </span>
         </Banner>
         <Banner>
@@ -107,7 +107,7 @@ const Marquee = () => {
             data-scroll-speed="-4"
             data-scroll-target="#direction"
           >
-            under-dressed
+            A LA QUE
           </span>
         </Banner>
         <Banner data-scroll data-scroll-speed="6" data-scroll-target="#direction">
@@ -117,7 +117,7 @@ const Marquee = () => {
             data-scroll-speed="6"
             data-scroll-target="#direction"
           >
-            with a Little Black Dress.
+            NO LE INTERESO.
           </span>
         </Banner>
       </Container>

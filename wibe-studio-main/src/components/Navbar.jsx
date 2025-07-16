@@ -25,8 +25,8 @@ const NavContainer = styled(motion.div)`
 `;
 
 const MenuBtn = styled.li`
-  background-color: ${(props) => `rgba(${props.theme.textRgba},0.7)`};
-  color: ${(props) => props.theme.body};
+  background-color: #024D65;
+  color: ${(props) => props.theme.text};
   width: 15rem;
   height: 2.5rem;
 
@@ -65,7 +65,7 @@ const MenuBtn = styled.li`
 const MenuItems = styled(motion.ul)`
   position: relative;
   height: ${(props) => props.theme.navHeight};
-  background-color: ${(props) => props.theme.body};
+  background-color: #003344ff;
   color: ${(props) => props.theme.text};
   display: flex;
   justify-content: space-around;
@@ -138,7 +138,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.9, y: 0 }}
           onClick={() => handleScroll('.about')}
         >
-          <Link to="/">about</Link>
+          <Link to="/">¿Que es?</Link>
         </Item>
         <Item
           whileHover={{ scale: 1.1, y: -5 }}
@@ -154,7 +154,7 @@ const Navbar = () => {
           onClick={() => handleScroll('.new-arrival')}
         >
           {' '}
-          <Link to="/">new arrival</Link>
+          <Link to="/">Planes</Link>
         </Item>
       </MenuItems>
     </NavContainer>
