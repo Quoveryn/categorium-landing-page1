@@ -218,8 +218,8 @@ let t1= gsap.timeline();
       <Title
         data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"
       >
-        New Arrivals
-      </Title>
+        Suscripcion
+              </Title>
 
       <Container ref={ScrollingRef}>
         <Photos img={img1} name="Denim" />
@@ -229,17 +229,14 @@ let t1= gsap.timeline();
       </Container>
 
       <Text data-scroll data-scroll-speed="-4">
-        There is new collection available for cool clothes in all sizes. This collection
-        is a great way to find a new look for you. It offers a variety of cool apparel
-        styles to fit your taste, while you can also find some cool clothes that you can
-        wear everyday.
+        te ofrecemos planes de suscripción flexibles y accesibles, 
+        pensados para que encuentres el equilibrio perfecto entre funcionalidades y presupuesto.
         <br />
         <br />
-        The first line of clothing you will see on this collection is for men. The
-        collection also includes three new styles for women.
+        Ya seas una organización pequeña que está dando sus primeros pasos 
+        o una federación consolidada que necesita automatizar procesos complejos, tenemos un plan pensado para vos.
         <br />
         <br />
-        Give it a try and experience a new look.
       </Text>
     </Section>
   );

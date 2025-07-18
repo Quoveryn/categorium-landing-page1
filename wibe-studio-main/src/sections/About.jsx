@@ -1,24 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-import img1 from "../assets/Images/1.webp"; // Reemplazalo con tu imagen real, por ejemplo: "categorium-banner.png"
+import img1 from "../assets/Images/videoejemploabout.mp4";
 
 const Section = styled.section`
   min-height: 100vh;
-  width: 100vw; 
+  width: 100vw;
   margin: 0;
   position: relative;
   display: flex;
-  background-color: #022e3dff; 
-  color: #fff; 
+  background-color: #022e3dff;
+  color: #fff;
 
   @media (max-width: 48em) {
-    width: 100vw;
     flex-direction: column;
-  }
-
-  @media (max-width: 30em) {
-    width: 100vw;
   }
 `;
 
@@ -40,14 +35,13 @@ const ContentWrapper = styled.div`
 
 const Left = styled.div`
   width: 50%;
-  font-size: ${(props) => props.theme.fontlg};
+  font-size: 1.9rem;
   font-weight: 300;
-  position: relative;
   z-index: 5;
   margin-top: 15%;
   display: flex;
   flex-direction: column;
-  color: #fff; /* Asegurar texto blanco */
+  color: #fff;
 
   @media (max-width: 64em) {
     width: 100%;
@@ -55,9 +49,8 @@ const Left = styled.div`
     margin: 0 auto;
     padding: 2rem;
     font-weight: 600;
-    
     backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
   }
 
@@ -72,24 +65,44 @@ const Left = styled.div`
   }
 `;
 
+const List = styled.ul`
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+
+  li {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "✔️";
+      margin-right: 0.5rem;
+    }
+  }
+`;
+
 const Right = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  img {
+  video {
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     height: auto;
     display: block;
+    border-radius: 10px;
   }
 
   @media (max-width: 64em) {
     width: 100%;
     margin-top: 2rem;
-    
-    img {
+
+    video {
       max-width: 90%;
     }
   }
@@ -103,7 +116,7 @@ const Title = styled.h1`
   top: 1rem;
   left: 5%;
   z-index: 5;
-  color: #fff; /* Título blanco */
+  color: #fff;
 
   span {
     display: inline-block;
@@ -122,33 +135,38 @@ const Title = styled.h1`
 
 const About = () => {
   return (
-    <Section id="fixed-target" className="about">
+    <Section className="about">
       <ContentWrapper>
-        <Title
-          data-scroll
-          data-scroll-speed="-2"
-          data-scroll-direction="horizontal"
-        >
-          ¿Que es?
+        <Title>
         </Title>
-
-        <Left data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
+        <Left>
+          <br />
           <p>
-            <strong></strong>
+            Plataforma digital para la gestión, visibilidad y desarrollo de torneos
+            y ligas de vóley.
+            <br />
+            <br />
+            Ofrecemos soluciones para federaciones, clubes y
+            deportistas, facilitando estadísticas, programación de partidos, fichaje
+            de jugadores y mucho más.
           </p>
           <br />
-          Plataforma digital para la gestión, visibilidad y desarrollo de torneos
-          y ligas de vóley. Ofrecemos soluciones para federaciones, clubes y
-          deportistas, facilitando estadísticas, programación de partidos, fichaje
-          de jugadores y mucho más.
-          <br />
-          <br />
-          Nuestro sistema permite seguir cada jugada como si estuvieras en la
-          cancha.
+          <List>
+            <li>Gestioná fichajes, calendarios, torneos, arbitrajes, estadísticas y mucho más.</li>
+            <li>Centralizá toda la información de tus jugadores, equipos y entrenadores.</li>
+            <li>Ahorrá tiempo con herramientas pensadas específicamente para el vóley.</li>
+            <li>Accedé a soporte técnico y actualizaciones constantes.</li>
+          </List>
         </Left>
 
         <Right>
-          <img src={img1} alt="Categorium Banner" />
+          <video 
+            src={img1} 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+          />
         </Right>
       </ContentWrapper>
     </Section>
